@@ -35,7 +35,7 @@ const Cart = () => {
         <div className=' max-w-[1340px] w-whole flex flex-col m-auto font-lato mb-5'>
             <button className='border p-2 m-2 w-[130px] bg-customYellow text-white rounded-lg '><Link to="/" className='flex items-center justify-between'><BackIcon/>Back to shop</Link></button>
             {cart.cartItems.length === 0 ? (
-                <div className='h-[80vh] flex justify-center items-center'><h1 className='text-[50px]'>Your cart is empty</h1></div>
+                <div className='h-[80vh] flex justify-center items-center'><h1 className='text-[20px] sm:text-[50px]'>Your cart is empty</h1></div>
             ) : (
                 <div className='flex flex-col'>
                     <div  className='font-lato h-0 flex flex-col w-[90%] p-4 m-auto '>
