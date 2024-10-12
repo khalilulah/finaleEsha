@@ -13,7 +13,7 @@ const Header = () => {
       <img src={eEsha} alt="logo"
       className='w-logoWeidth h-logoHeight mt-2 '
        />
-       <Link href="/shop">
+       <Link to="/shop">
        <button className="shop-div
         pl-2 pr-2 pt-[3px]
                  flex justify-around
