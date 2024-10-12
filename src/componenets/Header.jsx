@@ -1,7 +1,10 @@
 import React from 'react'
 import eEsha from '../assets/eEsha.png'
 import Cart from '../assets/Shoppingcart.png'
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux'
+
+
 const Header = () => {
 
   const{cartQuantity} = useSelector((state) => state.cart)
@@ -10,7 +13,7 @@ const Header = () => {
       <img src={eEsha} alt="logo"
       className='w-logoWeidth h-logoHeight mt-2 '
        />
-       <a href="/shop">
+       <Link href="/shop">
        <button className="shop-div
         pl-2 pr-2 pt-[3px]
                  flex justify-around
@@ -27,7 +30,7 @@ const Header = () => {
        <p className='absolute top-[-3px] right-[-6px] bg-customYellow text-white w-[17px] h-5 rounded-xl ' >{cartQuantity}</p>
         </div>
        </button>
-       </a>
+       </Link>
     </div>
   )
 }
